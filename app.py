@@ -2,7 +2,7 @@ import streamlit as st
 
 # ---------------- Page Config ----------------
 st.set_page_config(
-    page_title="Placeability Scholarship Calculator",
+    page_title="Acad Scholarship Calculator",
     layout="centered"
 )
 
