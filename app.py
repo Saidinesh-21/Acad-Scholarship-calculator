@@ -2,7 +2,7 @@ import streamlit as st
 
 # ---------------- Page Config ----------------
 st.set_page_config(
-    page_title="Academic Scholarship Calculator",
+    page_title="Placeability Scholarship Calculator",
     layout="centered"
 )
 
@@ -93,10 +93,10 @@ OPTIONS = {
     },
     "learner": {
         "Fresher": 5,
-        "Upskiller": 4,
-        "Super Upskiller": 3,
+        "Upskiller ( Currently working in tech and looking to upskill in data. )": 4,
+        "Super Upskiller ( Currently working in Data and wants to upskill. )": 3,
         "Unemployed": 2,
-        "Switcher": 1,
+        "Switcher ( Currently working in a different field and looking to switch to data. )": 1,
     },
     "background": {
         "CSIT": 5,
@@ -140,22 +140,28 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.markdown("<div class='bucket-title'>10th Marks (Bucket)</div>", unsafe_allow_html=True)
+    st.markdown("<div class='bucket-desc'>Academic performance in Class 10</div>", unsafe_allow_html=True)
     tenth = st.selectbox("", OPTIONS["tenth"].keys(), key="tenth", label_visibility="collapsed")
 
     st.markdown("<div class='bucket-title'>Graduation Score (Bucket)</div>", unsafe_allow_html=True)
+    st.markdown("<div class='bucket-desc'>Undergraduate academic performance</div>", unsafe_allow_html=True)
     graduation = st.selectbox("", OPTIONS["graduation"].keys(), key="graduation", label_visibility="collapsed")
 
     st.markdown("<div class='bucket-title'>Background (Bucket)</div>", unsafe_allow_html=True)
+    st.markdown("<div class='bucket-desc'>Educational background & prior exposure</div>", unsafe_allow_html=True)
     background = st.selectbox("", OPTIONS["background"].keys(), key="background", label_visibility="collapsed")
 
 with col2:
     st.markdown("<div class='bucket-title'>12th Marks (Bucket)</div>", unsafe_allow_html=True)
+    st.markdown("<div class='bucket-desc'>Academic performance in Class 12</div>", unsafe_allow_html=True)
     twelfth = st.selectbox("", OPTIONS["tenth"].keys(), key="twelfth", label_visibility="collapsed")
 
-    st.markdown("<div class='bucket-title'>Current Career Stage (Bucket)</div>", unsafe_allow_html=True)
+    st.markdown("<div class='bucket-title'>Current Career Status (Bucket)</div>", unsafe_allow_html=True)
+    st.markdown("<div class='bucket-desc'>Current professional / career stage</div>", unsafe_allow_html=True)
     learner = st.selectbox("", OPTIONS["learner"].keys(), key="learner", label_visibility="collapsed")
 
     st.markdown("<div class='bucket-title'>Persona (Bucket)</div>", unsafe_allow_html=True)
+    st.markdown("<div class='bucket-desc'>Communication, aptitude & technical</div>", unsafe_allow_html=True)
     persona = st.selectbox("", OPTIONS["persona"].keys(), key="persona", label_visibility="collapsed")
 
 # ---------------- Real-time Calculation ----------------
