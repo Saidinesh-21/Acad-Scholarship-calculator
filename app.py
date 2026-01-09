@@ -78,25 +78,25 @@ st.markdown("""
 # ---------------- Data ----------------
 OPTIONS = {
     "tenth": {
-        "Below 60%": 2,
-        "60% – 69%": 4,
-        "70% – 79%": 6,
-        "80% – 84%": 8,
+        "Below 40%": 2,
+        "40% – 54%": 4,
+        "55% – 69%": 6,
+        "70% – 84%": 8,
         "85% and above": 10,
     },
     "graduation": {
         "8.5 and above": 10,
         "7.0 – 8.49": 8,
-        "6.5 – 6.99": 6,
+        "6.0 – 6.99": 6,
         "5.0 – 6.49": 4,
         "Below 5.0": 2,
     },
     "learner": {
-        "Fresher": 5,
-        "Upskiller ( Currently working in tech and looking to upskill in data. )": 4,
-        "Super Upskiller ( Currently working in Data and wants to upskill. )": 3,
-        "Unemployed": 2,
-        "Switcher ( Currently working in a different field and looking to switch to data. )": 1,
+        "Fresher": 10,
+        "Upskiller ( Currently working in tech and looking to upskill in data. )": 6,
+        "Super Upskiller ( Currently working in Data and wants to upskill. )": 8,
+        "Unemployed": 4,
+        "Switcher ( Currently working in a different field and looking to switch to data. )": 2,
     },
     "background": {
         "CSIT": 5,
