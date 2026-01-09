@@ -129,7 +129,7 @@ def scholarship_label(score: int) -> str:
     return "₹25,000 — Moonshot Placeability"
 
 # ---------------- Header ----------------
-st.markdown("<h1>Placeability Scholarship Calculator</h1>", unsafe_allow_html=True)
+st.markdown("<h1>Acad Scholarship Calculator</h1>", unsafe_allow_html=True)
 st.markdown(
     "<div class='subtitle'>Scholarship is auto-calculated based on predefined buckets.</div>",
     unsafe_allow_html=True
