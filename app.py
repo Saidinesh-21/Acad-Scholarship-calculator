@@ -123,7 +123,7 @@ def scholarship_label(score: int) -> str:
     if score <= 37:
         return "No Scholarship — Average Placeability"
     if score <= 41:
-        return "₹10,000 — Good Placeability"
+        return "₹5,000 — Good Placeability"
     if score <= 46:
         return "₹20,000 — Excellent Placeability"
     return "₹25,000 — Moonshot Placeability"
